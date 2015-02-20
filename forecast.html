@@ -1,0 +1,17 @@
+<div class="forecast-container">
+  <p>
+    <a href="#/" class="back">Back to Search</a>
+  </p>
+
+  <p class="city">Forecast for {{ city }}</p>
+  <hr />
+  <p class="day-select"><a href="#/forecast/2" ng-class="{ 'selected': days === '2' }">Two Day</a> | <a href="#/forecast/5" ng-class="{ 'selected': days === '5' }">Five Day</a> | <a href="#/forecast/7" ng-class="{ 'selected': days === '7' }">Seven Day</a>
+  </p>
+  <div ng-repeat="w in weatherResult.list">
+  <!--   <div class="row"> -->
+      <div class="col-md-2 day">
+        <weather-list weather-day="w" convert-to-standard-high="convertToFahrenheit(highTemp)" convert-to-standard-low="convertToFahrenheit(lowTemp)" convert-to-date="convertToDate(dt)" convert-to-mph="convertToMph(wind)" convert-to-direction="convertToDirection(degrees)" capitalize="capitalize(desc)" date-format="MMM d, y"></weather-list>
+      </div>
+  <!--   </div> -->
+  </div>
+</div>

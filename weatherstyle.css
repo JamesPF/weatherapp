@@ -1,0 +1,189 @@
+body {
+  background-image: url(sunny-skies.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* HOME VIEW */
+.home-container {
+  background-color: rgba(0,0,0,0.4);
+  width: 40%;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  border-radius: 10px;
+}
+
+.entry {
+  display: block;
+  padding-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.entry h2 {
+  text-align: center;
+  color: rgb(240,240,240);
+}
+
+.entry .btn {
+  display: block;
+  width: 80%;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 24px;
+  font-size: 20px;
+}
+
+/* FORECAST VIEW */
+.forecast-container {
+  background-color: rgba(0,0,0,0.4);
+}
+
+.back {
+  margin-left: 15px;
+  color: rgb(200,200,200);
+}
+
+.back:hover {
+  color: rgb(240,240,240);
+  text-decoration: none;
+}
+
+.city {
+  color: rgb(240,240,240);
+  margin-left: 15px;
+  margin-bottom: -18px;
+  font-size: 24px;
+}
+
+.forecast-container hr {
+  width: 98%;
+}
+
+.day-select {
+  color: rgb(240,240,240);
+  margin-left: 15px;
+  padding-bottom: 8px;
+}
+
+.day-select a {
+  color: rgb(240,240,240);
+  padding: 5px;
+}
+
+.selected {
+  background-color: #337AB7
+}
+
+.day-select a:hover {
+  text-decoration: none;
+}
+
+.day {
+  display: inline-block;
+  width: 175px;
+  margin-right: -15px;
+}
+
+.condition-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.high-temp {
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.low-temp {
+  margin-bottom: 2px;
+}
+
+.wind {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.description {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1199px) {
+  .day {
+    width: 160px;
+    margin-left: -11px;
+    margin-right: -15px;
+  }
+
+  .wind {
+    font-size: 12px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .day {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .home-container {
+    width: 50%;
+  }
+
+  .forecast-container {
+    margin-bottom: 30px;
+  }
+
+  .high-temp {
+    text-align: center;
+  }
+
+  .low-temp {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .wind {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .home-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home-container {
+    width: 100%;  
+  }
+}
+
+
+
+
+
+
+

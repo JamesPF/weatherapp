@@ -1,0 +1,12 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{ convertToDate({ dt: weatherDay.dt }) | date: dateFormat }}</h3>
+  </div>
+  <div class="panel-body">
+    <img class="condition-icon" src="http://openweathermap.org/img/w/{{ weatherDay.weather[0].icon }}.png" >
+    <p class="high-temp">High: {{ convertToStandardHigh({ highTemp: weatherDay.temp.max }) }}&deg;</p>
+    <p class="low-temp">Low: {{ convertToStandardLow({ lowTemp: weatherDay.temp.min }) }}&deg;</p>
+    <p class="wind">Wind: {{ convertToMph({ wind: weatherDay.speed }) }}mph {{ convertToDirection({ degrees: weatherDay.deg }) }}</p>
+    <p class="description">{{ capitalize({ desc: weatherDay.weather[0].description }) }}</p>
+  </div>
+</div>
